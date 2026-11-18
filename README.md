@@ -10,6 +10,31 @@ session or earlier ones as a file. It is the Android counterpart of `PulseLogger
 
 Requires Android 7.0 (API 24) or newer. OkHttp is optional.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/console.png" width="250" alt="Console with network calls and log messages"></td>
+    <td align="center"><img src="docs/screenshots/request-detail.png" width="250" alt="Request detail with masked headers and body fields"></td>
+    <td align="center"><img src="docs/screenshots/sessions.png" width="250" alt="Sessions list with the current and an earlier session"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Console</b><br>Every call and log of the current session, with filters and search.</td>
+    <td align="center"><b>Request detail</b><br>Secrets are masked before they are stored.</td>
+    <td align="center"><b>Sessions</b><br>Open or share the current session and earlier ones.</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/share-menu.png" width="250" alt="Share menu with text and JSON options"></td>
+    <td align="center"><img src="docs/screenshots/share-sheet.png" width="250" alt="Android share sheet with the exported file"></td>
+    <td align="center"><img src="docs/screenshots/settings.png" width="250" alt="Settings with retention, storage and privacy options"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Share</b><br>As text for people or JSON for tools.</td>
+    <td align="center"><b>Share sheet</b><br>Send the file to Slack, email, Drive or anywhere else.</td>
+    <td align="center"><b>Settings</b><br>How long sessions are kept, storage limit, masking.</td>
+  </tr>
+</table>
+
 ## Setup
 
 ### 1. Add the dependency
