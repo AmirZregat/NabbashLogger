@@ -205,3 +205,7 @@ Then add `mavenLocal()` to the consuming project's repositories in `settings.gra
 
 The first covers redaction, HTTP capture and the export formats on the JVM. The second needs a
 device or emulator and covers storage: retention, the storage limit, clearing and search.
+
+## License
+
+Copyright 2026 Amir Zregat. Licensed under the [Apache License, Version 2.0](LICENSE).

@@ -42,6 +42,16 @@ publishing {
             artifactId = "nabbash-no-op"
             version = "1.0.0"
             afterEvaluate { from(components["release"]) }
+            pom {
+                name = "Nabbash"
+                url = "https://github.com/AmirZregat/NabbashLogger"
+                licenses {
+                    license {
+                        name = "Apache-2.0"
+                        url = "https://www.apache.org/licenses/LICENSE-2.0"
+                    }
+                }
+            }
         }
     }
 }
