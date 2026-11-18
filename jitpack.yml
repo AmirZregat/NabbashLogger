@@ -1,0 +1,4 @@
+jdk:
+  - openjdk17
+install:
+  - ./gradlew :nabbash:publishToMavenLocal :nabbash-no-op:publishToMavenLocal

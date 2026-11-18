@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+        <!-- Starts the logger with the process. Not reachable from other apps. -->
+        <provider
+            android:name=".internal.NabbashInitProvider"
+            android:authorities="${applicationId}.nabbash-init"
+            android:exported="false" />
+
+        <!-- Hands a shared export to the app the user picked, one read grant at a time. -->
+        <provider
+            android:name=".internal.NabbashFileProvider"
+            android:authorities="${applicationId}.nabbash.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/nabbash_file_paths" />
+        </provider>
+
+        <!-- The console. Only this app can start it. -->
+        <activity
+            android:name=".internal.ui.NabbashActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard|uiMode|density|fontScale|layoutDirection|locale"
+            android:exported="false"
+            android:label="@string/nabbash_console_title"
+            android:launchMode="singleTop"
+            android:theme="@style/nabbash_Theme"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

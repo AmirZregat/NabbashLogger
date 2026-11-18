@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nabbash_console_title">Nabbash</string>
+    <string name="nabbash_shortcut_label">Open Nabbash</string>
+
+    <style name="nabbash_Theme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

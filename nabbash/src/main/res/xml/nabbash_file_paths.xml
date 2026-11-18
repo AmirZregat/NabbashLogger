@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Only the export folder is shareable. The log database is not reachable through this provider. -->
+<paths>
+    <cache-path
+        name="exports"
+        path="nabbash_exports/" />
+</paths>
